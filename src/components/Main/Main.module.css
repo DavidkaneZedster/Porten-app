@@ -1,0 +1,52 @@
+.container {
+    max-width: 1020px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main {
+    background: url('../../assets/img/background.png') no-repeat center / cover;
+}
+
+.block {
+    padding: 160px 0px 80px 0px;
+}
+
+.main__text {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    padding: 95px 0px 95px 0px;
+    max-width: 300px;
+    margin-bottom: 80px;
+}
+
+.main__logo {
+    margin: 0 auto;
+    max-width: 185px;
+    width: 100%;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.subscription {
+    font-size: 22px;
+    color: #FFFFFF;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 7px
+}
+
+.main__subscription {
+    font-size: 16px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 730px;
+    width: 100%;
+    margin-bottom: 60px;
+}

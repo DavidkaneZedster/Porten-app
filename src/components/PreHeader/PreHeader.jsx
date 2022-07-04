@@ -21,8 +21,10 @@ export const PreHeader = () => {
                 <div className={styles.login__image}>
                     <Login />
                 </div>
-                <div className={styles.preHeader__login}>
-                    Войти / Регистрация
+                <div>
+                    <a className={styles.preHeader__login} href="/">
+                        Войти / Регистрация
+                    </a>
                 </div>
             </div>
         </section>

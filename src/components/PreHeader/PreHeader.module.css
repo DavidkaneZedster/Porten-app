@@ -9,7 +9,7 @@
 .preHeader__block {
     gap: 15px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 20px;
 }
 
 .preHeader__block:nth-child(2) {
@@ -18,6 +18,10 @@
 
 .spaces {
     padding: 0 15px;
+}
+
+.preHeader__login {
+    color: #969696;
 }
 
 @media screen and (max-width: 600px) {

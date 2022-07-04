@@ -6,7 +6,7 @@ import { items } from "../../assets/db/db.js";
 import burger from "../../assets/img/burger__icon.png";
 
 export const Menu = () => {
-    const [headerVisible, setHeaderVisible] = useState(false);
+    const [headerVisible, setHeaderVisible] = useState(true);
 
     const toggle = () => {
         setHeaderVisible(!headerVisible);

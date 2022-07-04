@@ -2,6 +2,7 @@ import "./App.module.css";
 import { PreHeader } from "./components/PreHeader/PreHeader";
 import styles from "./App.module.css";
 import { Header } from "./components/Header/Header";
+import { Main } from "./components/Main/Main";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Header />
                 </div>
             </div>
+            <Main />
         </>
     );
 }
