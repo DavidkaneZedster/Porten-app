@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    text-decoration: none;
+}
+
+.dark__bg {
+    background-color: #000000;
+}
+
+.gray__bg {
+    background-color: #0F0F0F;
+
+}
+
+.container {
+    max-width: 1020px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
