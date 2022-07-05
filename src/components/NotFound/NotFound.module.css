@@ -1,0 +1,32 @@
+.nothing {
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    max-width: 505px;
+    width: 100%;
+}
+
+.nothing__rus {
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    max-width: 550px;
+    width: 100%;
+}
+
+.space {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .nothing {
+        font-size: 30px;
+    }
+
+    .nothing__rus {
+        font-size: 16px;
+    }
+}

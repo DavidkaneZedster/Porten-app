@@ -3,6 +3,8 @@ import { PreHeader } from "./components/PreHeader/PreHeader";
 import styles from "./App.module.css";
 import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
+import { Routes, Route } from "react-router-dom";
+import { NotFound } from "./components/NotFound/NotFound";
 
 function App() {
     return (
@@ -17,7 +19,14 @@ function App() {
                     <Header />
                 </div>
             </div>
-            <Main />
+            <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/routes" element={<Header />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+            <div className="dark__bg">
+                <div className="container"></div>
+            </div>
         </>
     );
 }

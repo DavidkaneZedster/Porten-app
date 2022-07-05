@@ -22,6 +22,11 @@
 
 .preHeader__login {
     color: #969696;
+    transition: 0.4s all ease;
+}
+
+.preHeader__login:hover {
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 600px) {

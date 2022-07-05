@@ -39,6 +39,7 @@
 .menu__link:hover {
     margin-top: 30px;
     background-color: #1F1F1F;
+    color: #FFFFFF;
 }
 
 nav {
