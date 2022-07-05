@@ -1,3 +1,5 @@
+import watch from "../img/watch.png";
+
 export const items = [
     {
         name: "Понравилось",
@@ -7,5 +9,23 @@ export const items = [
     },
     {
         name: "Настройки",
+    },
+];
+
+export const seasonData = [
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
     },
 ];

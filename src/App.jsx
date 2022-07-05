@@ -5,6 +5,7 @@ import { Header } from "./components/Header/Header";
 import { Main } from "./components/Main/Main";
 import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./components/NotFound/NotFound";
+import { Season } from "./components/Season/Season";
 
 function App() {
     return (
@@ -24,8 +25,8 @@ function App() {
                 <Route path="/routes" element={<Header />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
-            <div className="dark__bg">
-                <div className="container"></div>
+            <div className={styles.dark__bg}>
+                <Season />
             </div>
         </>
     );

@@ -1,0 +1,149 @@
+* {
+    color: #FFFFFF;
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.season__title:after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.season {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 50px 80px 25px 80px;
+}
+
+.cards__image {
+    background: #191B1C;
+    padding: 55px 22px;
+}
+
+.cards__item_name {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 25px 0px 10px 0px;
+}
+
+.cards__item_price {
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    line-height: 19px;
+    color: #D0D0D0;
+}
+
+.new__collection {
+    background: url('../../assets/img/collection__image.png') no-repeat center top / cover;
+}
+
+.collection__title {
+    display: grid;
+}
+
+.image__text {
+    margin-top: 50%;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.collection__title:after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.catalog__btn {
+    padding: 12px 28px;
+    border: 1px solid #FFFFFF;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1435px) {
+    .collection__image_title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image__text {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 1295px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 25px 40px 15px 40px;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .season {
+        grid-template-columns: 1fr;
+    }
+
+    .cards__image {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 25px 10px 15px 10px;
+    }
+
+    .cards__image {
+        border-radius: 25px;
+    }
+
+    .cards__item {
+        margin-top: 45px;
+    }
+
+    .cards__item_name,
+    .cards__item_price {
+        text-align: center;
+    }
+}
