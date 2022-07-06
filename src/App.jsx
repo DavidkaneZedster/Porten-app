@@ -10,6 +10,7 @@ import { Collection } from "./components/Collection/Collection";
 import { NewProduct } from "./components/NewProduct/NewProduct";
 import { Brands } from "./components/Brands/Brands";
 import { PreFooter } from "./components/PreFooter/PreFooter";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -42,6 +43,9 @@ function App() {
                 </div>
             </div>
             <PreFooter />
+            <div className={styles.gray__bg}>
+                <Footer />
+            </div>
         </>
     );
 }
