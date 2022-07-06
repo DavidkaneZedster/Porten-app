@@ -8,6 +8,8 @@ import { NotFound } from "./components/NotFound/NotFound";
 import { Season } from "./components/Season/Season";
 import { Collection } from "./components/Collection/Collection";
 import { NewProduct } from "./components/NewProduct/NewProduct";
+import { Brands } from "./components/Brands/Brands";
+import { PreFooter } from "./components/PreFooter/PreFooter";
 
 function App() {
     return (
@@ -34,6 +36,12 @@ function App() {
                     <NewProduct />
                 </div>
             </div>
+            <div className={styles.gray__bg}>
+                <div className={styles.container}>
+                    <Brands />
+                </div>
+            </div>
+            <PreFooter />
         </>
     );
 }
