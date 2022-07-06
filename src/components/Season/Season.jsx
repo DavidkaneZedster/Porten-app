@@ -1,32 +1,16 @@
 import React from "react";
 import styles from "./Season.module.css";
-import { seasonData } from "../../assets/db/db";
+import { season, seasonData } from "../../assets/db/db";
+import { WatchComponent } from "../WatchComponent/WatchComponent";
+import { TitleComponent } from "../TitleComponent/TitleComponent";
 
 export const Season = () => {
     return (
         <section className={styles.season}>
             <div className={styles.season__card}>
-                <div className={styles.season__title}>
-                    <h3 className={styles.title}>СЕЗОН 2020/21</h3>
-                </div>
-                <div className={styles.cards}>
-                    {seasonData.map((item, i) => {
-                        return (
-                            <div className={styles.cards__item} key={i}>
-                                <div className={styles.cards__image}>
-                                    <img src={item.image} alt="watch" />
-                                </div>
-                                <div>
-                                    <div className={styles.cards__item_name}>
-                                        {item.name}
-                                    </div>
-                                    <p className={styles.cards__item_price}>
-                                        {item.price}
-                                    </p>
-                                </div>
-                            </div>
-                        );
-                    })}
+                <TitleComponent title={season} />
+                <div className={styles.container}>
+                    <WatchComponent data={seasonData} />
                 </div>
             </div>
             <div className={styles.new__collection}>

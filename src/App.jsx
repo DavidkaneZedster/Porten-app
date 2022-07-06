@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./components/NotFound/NotFound";
 import { Season } from "./components/Season/Season";
 import { Collection } from "./components/Collection/Collection";
+import { NewProduct } from "./components/NewProduct/NewProduct";
 
 function App() {
     return (
@@ -29,6 +30,9 @@ function App() {
             <div className={styles.dark__bg}>
                 <Season />
                 <Collection />
+                <div className={styles.container}>
+                    <NewProduct />
+                </div>
             </div>
         </>
     );

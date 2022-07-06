@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Collection.module.css";
 import image from "../../assets/img/collection__image_continue.png";
+import { TitleComponent } from "../TitleComponent/TitleComponent";
+import { collection } from "../../assets/db/db";
 
 export const Collection = () => {
     return (
@@ -11,9 +13,7 @@ export const Collection = () => {
 
             <div className={styles.collection__text}>
                 <div className={styles.container}>
-                    <div className={styles.collection__title}>
-                        <h3 className={styles.title}>Коллекция 2018</h3>
-                    </div>
+                    <TitleComponent title={collection} />
                     <div className={styles.subscription}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Non rutrum ornare ut mattis habitant dui arcu. Sagittis

@@ -72,3 +72,8 @@ export const newData = [
         price: "165 000 руб.",
     },
 ];
+
+export const season = "Сезон 2020/21";
+export const newCollection = "Новая коллекция";
+export const collection = "Коллекция 2018";
+export const newProduct = "Новые поступления";

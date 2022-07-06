@@ -1,0 +1,27 @@
+.title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.block__title:after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 925px) {
+    .title {
+        font-size: 28px;
+    }
+}
