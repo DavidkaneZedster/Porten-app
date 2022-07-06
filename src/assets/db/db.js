@@ -29,3 +29,46 @@ export const seasonData = [
         price: "165 000 руб.",
     },
 ];
+
+export const newData = [
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+    {
+        image: watch,
+        name: "Louis XVI ATHOS",
+        price: "165 000 руб.",
+    },
+];

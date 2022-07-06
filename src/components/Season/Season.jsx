@@ -40,7 +40,12 @@ export const Season = () => {
                             </div>
                             <div className={styles.catalog}>
                                 <div className={styles.catalog__btn}>
-                                    <a href="/">Каталог</a>
+                                    <a
+                                        className={styles.catalog__link}
+                                        href="/"
+                                    >
+                                        Каталог
+                                    </a>
                                 </div>
                             </div>
                         </div>

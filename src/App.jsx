@@ -6,6 +6,7 @@ import { Main } from "./components/Main/Main";
 import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./components/NotFound/NotFound";
 import { Season } from "./components/Season/Season";
+import { Collection } from "./components/Collection/Collection";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
             </Routes>
             <div className={styles.dark__bg}>
                 <Season />
+                <Collection />
             </div>
         </>
     );

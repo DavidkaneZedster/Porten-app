@@ -1,0 +1,94 @@
+.collection__image {
+    background: url('../../assets/img/collection__image_continue.png') no-repeat center top / cover;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+
+.container {
+    max-width: 1020px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.btn__collection {
+    color: #000000;
+    padding: 12px 28px;
+    border: 1px solid #FFFFFF;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.4s all ease;
+}
+
+.btn__collection:hover {
+    background-color: #0F0F0F;
+}
+
+.btn__link {
+    color: #FFFFFF;
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.collection__title:after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.subscription {
+    max-width: 470px;
+    width: 100%;
+    padding-top: 40px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.image {
+    display: none;
+}
+
+@media screen and (max-width: 868px) {
+    .collection {
+        margin-top: 10%;
+        grid-template-columns: 1fr;
+    }
+    
+    .image {
+        display: block;
+        max-width: 880px;
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
