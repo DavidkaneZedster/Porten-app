@@ -1,0 +1,55 @@
+.catalog {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.dark__bg {
+    background-color: #171717;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.4s all ease;
+}
+
+.card:hover {
+    background-color: rgb(102, 99, 99);
+    color: #FFFFFF;
+    transform: scale(0.9);
+}
+
+.title {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.all {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.loading {
+    font-size: 52px;
+    margin: 0 auto;
+}
+
+.catalog__img {
+    width: 100%;
+    max-width: 150px;
+}

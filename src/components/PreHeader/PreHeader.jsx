@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./PreHeader.module.css";
 import { ReactComponent as Phone } from "../../assets/img/phone.svg";
 import { ReactComponent as Login } from "../../assets/img/login.svg";
+import { Link } from "react-router-dom";
 
 export const PreHeader = () => {
     return (
@@ -14,7 +15,7 @@ export const PreHeader = () => {
                     8 (812) 123-45-67 <span className={styles.tab} />
                     <span className={styles.spaces}>|</span>
                     Работаем 7 дней в неделю <span className={styles.tab} />
-                    <span className={styles.spaces}>|</span> 9:00 — 18:00
+                    <span className={styles.spaces}>|</span> 9:15 — 22:00
                 </div>
             </div>
             <div className={styles.preHeader__block}>
@@ -22,9 +23,9 @@ export const PreHeader = () => {
                     <Login />
                 </div>
                 <div>
-                    <a className={styles.preHeader__login} href="/">
+                    <Link className={styles.preHeader__login} to="/">
                         Войти / Регистрация
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

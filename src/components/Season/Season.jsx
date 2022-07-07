@@ -3,6 +3,7 @@ import styles from "./Season.module.css";
 import { season, seasonData } from "../../assets/db/db";
 import { WatchComponent } from "../WatchComponent/WatchComponent";
 import { TitleComponent } from "../TitleComponent/TitleComponent";
+import { Link } from "react-router-dom";
 
 export const Season = () => {
     return (
@@ -24,12 +25,12 @@ export const Season = () => {
                             </div>
                             <div className={styles.catalog}>
                                 <div className={styles.catalog__btn}>
-                                    <a
+                                    <Link
                                         className={styles.catalog__link}
-                                        href="/"
+                                        to="/catalog"
                                     >
                                         Каталог
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

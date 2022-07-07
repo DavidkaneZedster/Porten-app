@@ -4,6 +4,7 @@ import { ReactComponent as Cart } from "../../assets/img/cart.svg";
 import { ReactComponent as Search } from "../../assets/img/search.svg";
 import { items } from "../../assets/db/db.js";
 import burger from "../../assets/img/burger__icon.png";
+import { Link } from "react-router-dom";
 
 export const Menu = () => {
     const [headerVisible, setHeaderVisible] = useState(true);
@@ -29,14 +30,14 @@ export const Menu = () => {
                                                 className={styles.menu__item}
                                                 key={i}
                                             >
-                                                <a
-                                                    href="/"
+                                                <Link
+                                                    to="/"
                                                     className={
                                                         styles.menu__link
                                                     }
                                                 >
                                                     {item.name}
-                                                </a>
+                                                </Link>
                                             </li>
                                         );
                                     })}
@@ -45,14 +46,14 @@ export const Menu = () => {
                         </div>
                         <div className={styles.header__icons}>
                             <div className={styles.cart}>
-                                <a href="/">
+                                <Link to="/">
                                     <Cart />
-                                </a>
+                                </Link>
                             </div>
                             <div className={styles.search}>
-                                <a href="/">
+                                <Link to="/">
                                     <Search />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </>

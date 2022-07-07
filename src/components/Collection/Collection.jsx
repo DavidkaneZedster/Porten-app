@@ -3,6 +3,7 @@ import styles from "./Collection.module.css";
 import image from "../../assets/img/collection__image_continue.png";
 import { TitleComponent } from "../TitleComponent/TitleComponent";
 import { collection } from "../../assets/db/db";
+import { Link } from "react-router-dom";
 
 export const Collection = () => {
     return (
@@ -29,9 +30,9 @@ export const Collection = () => {
                     </div>
                     <div className={styles.btn}>
                         <div className={styles.btn__collection}>
-                            <a className={styles.btn__link} href="/">
+                            <Link className={styles.btn__link} to="/">
                                 Посмотреть коллекцию
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
