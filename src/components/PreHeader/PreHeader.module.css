@@ -21,6 +21,7 @@
 }
 
 .preHeader__login {
+    cursor: pointer;
     color: #969696;
     transition: 0.4s all ease;
 }

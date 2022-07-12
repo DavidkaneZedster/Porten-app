@@ -1,0 +1,29 @@
+.dark__bg {
+    background-color: #171717;
+}
+
+.pagination {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.page__item {
+    cursor: pointer;
+    border: 1px solid rgb(0, 187, 255);
+    padding: 5px;
+    transition: 0.4s all ease;
+}
+
+.page__item:hover {
+    transform: translateY(-5px);
+}
+
+.page__link {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px;
+}

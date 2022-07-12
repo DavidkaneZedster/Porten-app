@@ -1,28 +1,7 @@
 import React from "react";
 import styles from "./Catalog.module.css";
-import { useState, useEffect } from "react";
-import { fetchCatalog } from "../../api/FetchCatalog.js";
 
-export const Catalog = () => {
-    const [catalog, setCatalog] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
-
-    const getCatalog = async (params) => {
-        try {
-            setIsLoading(true);
-            const res = await fetchCatalog(params);
-            setCatalog(res);
-        } catch (err) {
-            console.error(err);
-        } finally {
-            setIsLoading(false);
-        }
-    };
-
-    useEffect(() => {
-        getCatalog();
-    }, []);
-
+export const Catalog = ({ catalog, isLoading }) => {
     return (
         <div className={styles.dark__bg}>
             <section className={styles.catalog}>
@@ -31,7 +10,7 @@ export const Catalog = () => {
                     {isLoading ? (
                         <div className={styles.loading}>Loading...</div>
                     ) : (
-                        catalog?.data?.results.map((item) => (
+                        catalog?.map((item) => (
                             <div className={styles.card} key={item.id}>
                                 <h2 className={styles.title}>{item.name}</h2>
                                 <img

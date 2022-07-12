@@ -1,0 +1,7 @@
+.catalog__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85vh;
+    background-color: #171717;
+}
