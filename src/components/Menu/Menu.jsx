@@ -8,9 +8,28 @@ import { Link } from "react-router-dom";
 
 export const Menu = () => {
     const [headerVisible, setHeaderVisible] = useState(true);
+    const [scrollIsActive, setScrollIsActive] = useState(false);
+
+    const disableScrolling = () => {
+        const x = window.scrollX;
+        const y = window.scrollY;
+        window.onscroll = () => {
+            window.scrollTo(x, y);
+        };
+    };
+
+    const enableScrolling = () => {
+        window.onscroll = () => {};
+    };
+
+    const toggleScrolling = () => {
+        scrollIsActive ? disableScrolling() : enableScrolling();
+        setScrollIsActive(!scrollIsActive);
+    };
 
     const toggle = () => {
         setHeaderVisible(!headerVisible);
+        toggleScrolling();
     };
 
     return (

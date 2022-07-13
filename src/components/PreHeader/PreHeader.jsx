@@ -7,6 +7,24 @@ import { Link } from "react-router-dom";
 
 export const PreHeader = () => {
     const [isRegisterVisible, setIsRegisterVisible] = useState(false);
+    const [scrollIsActive, setScrollIsActive] = useState(true);
+
+    const disableScrolling = () => {
+        const x = window.scrollX;
+        const y = window.scrollY;
+        window.onscroll = () => {
+            window.scrollTo(x, y);
+        };
+    };
+
+    const enableScrolling = () => {
+        window.onscroll = () => {};
+    };
+
+    const toggleScrolling = () => {
+        scrollIsActive ? disableScrolling() : enableScrolling();
+        setScrollIsActive(!scrollIsActive);
+    };
 
     const register = () => {
         setIsRegisterVisible(!isRegisterVisible);
@@ -34,7 +52,7 @@ export const PreHeader = () => {
                         <Link
                             className={styles.preHeader__login}
                             to="/"
-                            onClick={() => register()}
+                            onClick={() => register() & toggleScrolling()}
                         >
                             Войти / Регистрация
                         </Link>
@@ -44,6 +62,7 @@ export const PreHeader = () => {
             <Modal
                 isRegisterVisible={isRegisterVisible}
                 setIsRegisterVisible={setIsRegisterVisible}
+                toggleScrolling={toggleScrolling}
             />
         </>
     );

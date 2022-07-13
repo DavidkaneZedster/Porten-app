@@ -2,9 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Modal.module.css";
 
-export const Modal = ({ isRegisterVisible, setIsRegisterVisible }) => {
+export const Modal = ({
+    isRegisterVisible,
+    setIsRegisterVisible,
+    toggleScrolling,
+}) => {
     const closeModal = () => {
         setIsRegisterVisible(!isRegisterVisible);
+        toggleScrolling();
     };
 
     return (
@@ -41,7 +46,7 @@ export const Modal = ({ isRegisterVisible, setIsRegisterVisible }) => {
                             <button className={styles.register__btn}>
                                 Register
                             </button>
-                            <Link className={styles.sign__in} to="signin">
+                            <Link className={styles.sign__in} to="/signin">
                                 Already have accout? Sign in.
                             </Link>
                         </form>

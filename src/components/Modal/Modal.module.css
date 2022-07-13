@@ -35,6 +35,7 @@
 .form__input {
     padding-left: 10px;
     height: 28px;
+    border-radius: 5px;
 }
 
 .sign__in {
@@ -44,6 +45,7 @@
 }
 
 .register__btn {
+    cursor: pointer;
     margin-top: 5px;
     padding: 8px;
     border: none;
