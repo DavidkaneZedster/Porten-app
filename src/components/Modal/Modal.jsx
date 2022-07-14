@@ -43,10 +43,21 @@ export const Modal = ({
                                 type="text"
                                 placeholder="Repeat your password"
                             />
-                            <button className={styles.register__btn}>
+                            <button
+                                className={styles.register__btn}
+                                onClick={(e) =>
+                                    e.currentTarget === e.target && closeModal()
+                                }
+                            >
                                 Register
                             </button>
-                            <Link className={styles.sign__in} to="/signin">
+                            <Link
+                                className={styles.sign__in}
+                                to="/signin"
+                                onClick={(e) =>
+                                    e.currentTarget === e.target && closeModal()
+                                }
+                            >
                                 Already have accout? Sign in.
                             </Link>
                         </form>

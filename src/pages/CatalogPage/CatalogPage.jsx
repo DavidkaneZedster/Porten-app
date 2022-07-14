@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Catalog } from "../../components/Catalog/Catalog";
 import { Pagination } from "../../components/Pagination/Pagination";
-import { fetchCatalog } from "../../api/FetchCatalog.js";
+import { FetchCatalog } from "../../api/FetchCatalog.js";
 import styles from "./CatalogPage.module.css";
 
 export const CatalogPage = () => {
@@ -21,7 +21,7 @@ export const CatalogPage = () => {
     const getCatalog = async (params) => {
         try {
             setIsLoading(true);
-            const res = await fetchCatalog(params);
+            const res = await FetchCatalog(params);
             setCatalog(res);
         } catch (err) {
             console.error(err);

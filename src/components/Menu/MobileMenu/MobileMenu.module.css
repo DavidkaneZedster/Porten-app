@@ -1,14 +1,10 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
-    position: relative;
+.menu {
+    display: none;
 }
 
 .header__menu,
 .header__icons {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 40px;
 }
@@ -48,6 +44,17 @@ nav {
 }
 
 @media screen and (max-width: 720px) {
+    .menu {
+        display: block;
+    }
+
+    .header__menu,
+    .header__icons {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    
     .burger__btn {
         display: block;
         z-index: 2;

@@ -1,0 +1,47 @@
+.header__menu,
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.cart {
+    margin-left: 20px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__link {
+    color: #969696;
+    padding: 35px 20px;
+    text-transform: uppercase;
+    transition: 0.4s all ease;
+}
+
+.burger__btn {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__link:hover {
+    margin-top: 30px;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+    .menu,
+    .header__icons {
+        display: none;
+    }
+}
